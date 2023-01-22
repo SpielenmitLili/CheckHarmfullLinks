@@ -30,15 +30,15 @@ date_time = currentTime.strftime("%m/%d/%Y, %H:%M:%S")
 
 # Start program with header
 print("#############################################################################")
-print(date_time + " | Process successfuly started for user " + getpass.getuser() + " on " + socket.gethostname() + " in program CheckHarmfullLinks")
-print(date_time + " | CheckHarmfullLinks by Lili Chelsea Urban started!")
+print(date_time + " | Process successfully started for user " + getpass.getuser() + " on " + socket.gethostname() + " in program CheckHarmfulLinks")
+print(date_time + " | CheckHarmfulLinks by Lili Chelsea Urban started!")
 print("#############################################################################")
 print(" ")
 print(" ")
 print(" ")
 
-# Open file with potencially harmful links
-with open("harmfullList.txt") as file:
+# Open file with potentially harmful links
+with open("harmfulList.txt") as file:
     # Each link needs to be checked once
     for line in file:
 
@@ -123,17 +123,17 @@ print(" ")
 
 print("#############################################################################")
 print("RESULTS:")
-print("All links checked: " + allRecords)
-print("Already blocked links found: " + notFoundRecords)
-print("Not blocked links found: " + foundRecords)
+print("All links checked: " + str(allRecords))
+print("Already blocked links found: " + str(notFoundRecords))
+print("Not blocked links found: " + str(foundRecords))
 print("#############################################################################")
 
 print(" ")
 print(" ")
 print(" ")
 
-print(date_time + " | Process successfuly completed for user " + getpass.getuser() + " on " + socket.gethostname() + " in program CheckHarmfullLinks")
+print(date_time + " | Process successfully completed for user " + getpass.getuser() + " on " + socket.gethostname() + " in program CheckHarmfulLinks")
 
 #
-# Copyright 2022 by Lili Chelsea Urban. All Rights Reserved
+# Copyright 2023 by Lili Chelsea Urban. All Rights Reserved
 #
